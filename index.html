@@ -4,41 +4,47 @@
         <title>Carter Janse</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale-1.0" />
-        <link rel="stylesheet" href="style.css">
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     </head>
     <body id="top">
-        <header>
-            <a href="#top" class="top">Carter Janse</a>
+        <header class="fixedw-full bg-red-800 text-white md:flex md:justify-between">
+            <a class="font-bold block px-8 py-4" href="#top">Carter Janse</a>
             <nav>
-                <li>
-                    <a href="#hero">Hero</a>
-                </li>
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#tech-support">Tech support</a>
-                </li>
+                <ul class="md:flex">
+                    <li>
+                        <a class=" block px-8 py-4 hover:bg-red-700" href="#hero">Hero</a>
+                    </li>
+                    <li>
+                        <a class=" block px-8 py-4 hover:bg-red-700" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class=" block px-8 py-4 hover:bg-red-700" href="#tech-support">Tech support</a>
+                    </li>
+                </ul>
             </nav>
         </header>
 
         <main>
-            <section id="hero">
-                <p>It's Jake from</p>
-                <h1>State Farm</h1>
+            <section id="hero" class="h-screen bg-red-600 text-white text-center grid place-items-center">
+                <div>
+                    <p class="text-lg font-bold italic uppercase tracking-wider">It's Jake from</p>
+                    <h1>State Farm</h1>
+                </div>
             </section>
-            <section id="about">
-                <h2>About</h2>
-                <ul>
-                    <li>
-                        <img src="design.jpg" />
-                        <h3>Design</h3>
-                        <p>Life is great</p>
-                    </li>
+            <section id="about" class="bg-gray-100 pt-10">
+                <h2 class="text-center text-xl font-bold text-gray-900">About</h2>
+                <ul class="grid p-10 gap-10 md:grid-cols-3">
+                    <li class="bg-white shadow rounded-lg overflow-hidden">
+                        <img src="design.jpg" class="w-full" />
+                        <div class="p-4">
+                            <h3 class="font-bold">Design</h3>
+                            <p>Life is great</p>
+                        </div>
+                    </li class="bg-white shadow rounded-lg overflow-hidden">
                         <img />
                         <h3>Programming</h3>
                         <p>learning</p>
-                    </li>
+                    </li class="bg-white shadow rounded-lg overflow-hidden">
                     <li>
                         <img />
                         <h3>Lunch</h3>
